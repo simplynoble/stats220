@@ -6,7 +6,7 @@ This is my repo for STATS 220.
 <ul>
 <li>I am undertaking a degree in Statistics, Economics and Information Systems (BA/BCom).</li> 
 <li>I am taking STATS 220 because to use data, we have to get it from somewhere, and ensure it's clean enough, to be used. STATS 220 seems very practical and not just theory.</li> 
-</li>I am interested in learning about getting data through scraping sites & APIs, fixing data, and managing it. I also take Information Systems which deals with the systems in which the data is stored.</li>
+<li>I am interested in learning about getting data through scraping sites & APIs, fixing data, and managing it. I also take Information Systems which deals with the systems in which the data is stored.</li>
 </ul>
 
 A meme that captures how I currently feel about my university studies is
