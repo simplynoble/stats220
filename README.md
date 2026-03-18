@@ -36,3 +36,12 @@ A meme that captures how I currently feel about my university studies is
 
 update: *that wasn't a meme was it...*
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGkyN2Joa2M5aHVsMW9teGt0dWdwNWw2dG5uM3gzOXQ5bHZicGFnYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/a5viI92PAF89q/giphy.gif)
+
+
+## Part B:
+![](https://i.pinimg.com/736x/f6/9a/7d/f69a7d5527aad29aab8312c1217d1d90.jpg)
+
+https://i.pinimg.com/736x/f6/9a/7d/f69a7d5527aad29aab8312c1217d1d90.jpg
+
+### Meme Analysis:
+To recreate this meme design, I will need a background image overlaid with bold, white, all-caps sans-serif text positioned at the top center. The text has a strong black outline ensuring readability against the underlying image.
