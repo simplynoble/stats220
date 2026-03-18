@@ -11,11 +11,11 @@ This is my repo for **STATS 220** and I'm *Ryan Osbaldiston*!
 
 ### Top most visited websites 2026
 <ol>
- <li>[Google](https://google.com/) - *Alphabet*</li>
- <li>[YouTube](https://youtube.com) - *Alphabet*</li>
- <li>[Facebook](https://facebook.com) - *Meta*</li>
- <li>[Instagram](https://instagram.com) - *Meta*</li>
- <li>[ChatGPT](https://chatgpt.com) - *OpenAI*</li>
+ <li>[Google](https://google.com/) - Alphabet</li>
+ <li>[YouTube](https://youtube.com) - Alphabet</li>
+ <li>[Facebook](https://facebook.com) - Meta</li>
+ <li>[Instagram](https://instagram.com) - Meta</li>
+ <li>[ChatGPT](https://chatgpt.com) - OpenAI</li>
 </ol>
 
 A meme that captures how I currently feel about my university studies is
