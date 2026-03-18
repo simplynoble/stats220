@@ -1,6 +1,6 @@
 # stats220
 
-This is my repo for **STATS 220.** 
+This is my repo for **STATS 220** and I'm *Ryan Osbaldiston*!
 
 ### A little about me:
 <ul>
