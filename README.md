@@ -34,3 +34,5 @@ A meme that captures how I currently feel about my university studies is
  
 ![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExenJ0c24xMHd4NjdpMHR1emg1bzZ4ZXdnaDRhczFkaXlkNGVrbzZnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kg6HY4DlnoS4jndI1O/giphy.gif)
 
+update: *that wasn't a meme was it...*
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGkyN2Joa2M5aHVsMW9teGt0dWdwNWw2dG5uM3gzOXQ5bHZicGFnYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/a5viI92PAF89q/giphy.gif)
