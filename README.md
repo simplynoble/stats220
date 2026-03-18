@@ -9,12 +9,26 @@ This is my repo for **STATS 220** and I'm *Ryan Osbaldiston*!
 <li>I am interested in learning about getting data through scraping sites & APIs, fixing data, and managing it. I also take Information Systems which deals with the systems in which the data is stored.</li>
 </ul>
 
-### Top most visited websites 2026
+### Top visited websites in 2026
 - [Google](https://google.com/) - Alphabet
 - [YouTube](https://youtube.com) - Alphabet
 - [Facebook](https://facebook.com) - Meta
 - [Instagram](https://instagram.com) - Meta
 - [ChatGPT](https://chatgpt.com) - OpenAI
+
+### Top 10 most popular movies 2025 (IMDB)
+<ol>
+  <li>Superman</li>
+  <li>Weapons</li>
+  <li>Sinners</li>
+  <li>One Battle After Another</li>
+  <li>Jurassic World: Rebirth</li>
+  <li>Frankenstein</li>
+  <li>Happy Gilmore 2</li>
+  <li>Thunderbolts*</li>
+  <li>Mission: Impossible - The Final Reckoning</li>
+  <li>F1: The Movie</li>
+</ol>
 
 A meme that captures how I currently feel about my university studies is
  
