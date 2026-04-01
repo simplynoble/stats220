@@ -1,0 +1,93 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+```
+```{css}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h2 {
+  color: #1a1a2e;
+  border-bottom: 2px solid #e94560;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #16213e;
+}
+```
+
+## Tracking my YouTube watching habits
+
+Over a two-week period in March 2026, I logged every YouTube video I watched using a Google Form. Each entry captured the video category, length in minutes, how I found the video, and a personal rating out of 10. The goal was to uncover patterns in what I watch, how I find content, and whether I actually enjoy what the algorithm serves me.
+```{r data}
+library(tidyverse)
+
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQxfs-eL_mktuY6n9cE8dVwBeFmOwY_9Czls7EUIf9oL-1FDI24W1tSkhn9ZG575Tgg55gbCS4s1Koq/pub?gid=2080505976&single=true&output=csv")
+
+latest_data <- logged_data %>%
+  rename(
+    timestamp = Timestamp,
+    category = `What category best describes this video?`,
+    length_mins = `How long was the video in minutes?`,
+    discovery = `How did you find this video?`,
+    rating = `Rate this video from 1 to 10`
+  )
+```
+```{r summary_values}
+mean_length <- round(mean(latest_data$length_mins), 1)
+mean_rating <- round(mean(latest_data$rating), 1)
+prop_recommended <- round(sum(latest_data$discovery == "YouTube homepage/recommendation") / nrow(latest_data) * 100, 1)
+total_videos <- nrow(latest_data)
+```
+
+### At a glance
+
+Over the logging period, I watched a total of **`r total_videos`** videos. The average video length was **`r mean_length` minutes**, and my average rating was **`r mean_rating` out of 10**. Notably, **`r prop_recommended`%** of videos I watched came from YouTube's homepage or recommendation algorithm.
+
+### What am I watching?
+```{r bar_chart_1}
+latest_data %>%
+  ggplot() +
+  geom_bar(aes(x = reorder(category, category, function(x) -length(x)),
+               fill = category)) +
+  labs(
+    title = "What do I watch on YouTube?",
+    subtitle = "Number of videos watched by category over two weeks",
+    x = "Video category",
+    y = "Number of videos",
+    caption = "Source: Personal YouTube watching log, March 2026"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+Music videos made up the largest share of my viewing, followed by Entertainment/Comedy and News/Politics. Education and Self Help content appeared less frequently, while Technology had only a single entry.
+
+### How am I finding these videos?
+```{r bar_chart_2}
+latest_data %>%
+  ggplot() +
+  geom_bar(aes(x = category, fill = discovery)) +
+  labs(
+    title = "How do I find the videos I watch?",
+    subtitle = "Discovery method across video categories over two weeks",
+    x = "Video category",
+    y = "Number of videos",
+    fill = "Discovery method",
+    caption = "Source: Personal YouTube watching log, March 2026"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 25, hjust = 1))
+```
+
+The YouTube homepage and recommendation algorithm dominated how I found content, accounting for `r prop_recommended`% of all videos. Searching and shared links were more common for News/Politics and Self Help content, suggesting I actively seek out those categories rather than passively consuming them.
