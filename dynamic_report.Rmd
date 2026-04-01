@@ -69,15 +69,6 @@ banner <- image_blank(800, 150, color = "#1a1a2e") %>%
 
 banner
 ```
-```
-
-Note this chunk needs to go **after** the `summary_values` chunk since it uses `total_videos`. This banner is also dynamic because it updates the video count.
-
-**2. Add regex validation to your Google Form**
-
-Go to your "How long was the video in minutes?" question and change the response validation from "Number > 0" to **regex matching** with the pattern:
-```
-^[1-9][0-9]*$
 
 ### At a glance
 
