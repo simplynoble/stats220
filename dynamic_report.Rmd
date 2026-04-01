@@ -50,6 +50,35 @@ prop_recommended <- round(sum(latest_data$discovery == "YouTube homepage/recomme
 total_videos <- nrow(latest_data)
 ```
 
+```{r banner}
+library(magick)
+
+banner <- image_blank(800, 150, color = "#1a1a2e") %>%
+  image_annotate("YouTube Watching Log",
+                 size = 40,
+                 color = "white",
+                 font = "Helvetica",
+                 gravity = "center",
+                 location = "+0-20") %>%
+  image_annotate(paste0("Tracking ", total_videos, " videos and counting"),
+                 size = 20,
+                 color = "#e94560",
+                 font = "Helvetica",
+                 gravity = "center",
+                 location = "+0+30")
+
+banner
+```
+```
+
+Note this chunk needs to go **after** the `summary_values` chunk since it uses `total_videos`. This banner is also dynamic because it updates the video count.
+
+**2. Add regex validation to your Google Form**
+
+Go to your "How long was the video in minutes?" question and change the response validation from "Number > 0" to **regex matching** with the pattern:
+```
+^[1-9][0-9]*$
+
 ### At a glance
 
 Over the logging period, I watched a total of **`r total_videos`** videos. The average video length was **`r mean_length` minutes**, and my average rating was **`r mean_rating` out of 10**. Notably, **`r prop_recommended`%** of videos I watched came from YouTube's homepage or recommendation algorithm.
